@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>D87B5D19-E7B6-456C-8851-82F7A66A48DD</title>
+    <defs>
+        <path d="M1,2 C1.55228475,2 2,1.55228475 2,1 C2,0.44771525 1.55228475,0 1,0 C0.44771525,0 0,0.44771525 0,1 C0,1.55228475 0.44771525,2 1,2 Z M1,6 C1.55228475,6 2,5.55228475 2,5 C2,4.44771525 1.55228475,4 1,4 C0.44771525,4 0,4.44771525 0,5 C0,5.55228475 0.44771525,6 1,6 Z M1,10 C1.55228475,10 2,9.55228475 2,9 C2,8.44771525 1.55228475,8 1,8 C0.44771525,8 0,8.44771525 0,9 C0,9.55228475 0.44771525,10 1,10 Z M5,2 C5.55228475,2 6,1.55228475 6,1 C6,0.44771525 5.55228475,0 5,0 C4.44771525,0 4,0.44771525 4,1 C4,1.55228475 4.44771525,2 5,2 Z M5,6 C5.55228475,6 6,5.55228475 6,5 C6,4.44771525 5.55228475,4 5,4 C4.44771525,4 4,4.44771525 4,5 C4,5.55228475 4.44771525,6 5,6 Z M5,10 C5.55228475,10 6,9.55228475 6,9 C6,8.44771525 5.55228475,8 5,8 C4.44771525,8 4,8.44771525 4,9 C4,9.55228475 4.44771525,10 5,10 Z" id="path-1"></path>
+    </defs>
+    <g id="↳-Transport" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Add-Cost-by-Area---Dialog" transform="translate(-461.000000, -296.000000)">
+            <g id="Modal/Desktop/Default" transform="translate(426.000000, 123.000000)">
+                <g id="Group-24" transform="translate(26.000000, 89.000000)">
+                    <g id="Group-11-Copy-2" transform="translate(0.000000, 69.000000)">
+                        <g id="Icons/drag-dots" transform="translate(9.000000, 15.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="drag-dots" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
