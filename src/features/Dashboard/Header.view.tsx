@@ -46,7 +46,7 @@ const HeaderView: React.FC<HeaderView> = ({ collapsed, setCollapsed, onChange })
           <div className="bell">
             <span className="count">1</span>
             {/* <Icon iconName="icon1" /> */}
-            <img src="/public/images/icons/newImages/card1.svg" alt="" />
+            {/* <img src="/public/images/icons/newImages/card1.svg" alt="" /> */}
           </div>
           <div className="message">
             <span className="count">1</span>
@@ -55,7 +55,7 @@ const HeaderView: React.FC<HeaderView> = ({ collapsed, setCollapsed, onChange })
         </article>
         <Dropdown menu={{ items: dataList?.items }}>
           <a onClick={(e) => e.preventDefault()}>
-            <img src='/public/images/icons/ss.png' alt="AAA" />
+            {/* <img src='/public/images/icons/ss.png' alt="AAA" /> */}
             <Space className='text-20-bold'>
               Admin
               <Icon iconName="caret-bottom" />
