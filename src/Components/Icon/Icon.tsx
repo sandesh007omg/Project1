@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import { Fragment } from 'react';
-import icons from '../../../../assets/images/icons.svg';
+import icons from '../../assets/images/icons.svg';
 import IconStyled from './IconStyled';
 
 const propTypes = {

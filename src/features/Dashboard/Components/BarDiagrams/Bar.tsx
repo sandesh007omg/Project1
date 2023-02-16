@@ -4,29 +4,27 @@ import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Resp
 const data = [
   {
     name: '1/8',
-    uv: 4000,
+    expense: 4000,
   },
   {
     name: '1/9',
-    uv: 3000,
+    expense: 3000,
   },
   {
     name: '1/10',
-    uv: 2000,
+    expense: 2000,
   },
   {
     name: '1/10',
-    uv: 2000,
+    expense: 2000,
   },
   {
     name: '1/10',
-    uv: 2000,
+    expense: 2000,
   },
 ];
 
 export default class Example extends PureComponent {
-  static demoUrl = 'https://codesandbox.io/s/simple-bar-chart-tpz8r';
-
   render() {
     return (
       <ResponsiveContainer width="50%" height="50%">
@@ -45,8 +43,7 @@ export default class Example extends PureComponent {
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Legend />
-          <Bar dataKey="uv" fill="#FF5722" />
+          <Bar dataKey="expense" fill="#FF5722" />
         </BarChart>
       </ResponsiveContainer>
     );

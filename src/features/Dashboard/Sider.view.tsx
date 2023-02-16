@@ -20,32 +20,30 @@ import useDashboard from './Controller/useDashboard.controller';
 import Greet from './Components/Greetings';
 import CardContainer from './Components/Card';
 import BarDiagram from './Components/BarDiagrams';
-import HeaderView from './Header.view'
-import SiderView from './Sider.view'
 
 
 const { Header, Sider, Content } = Layout;
 
+interface SiderView {
+  collapsed?: boolean;
+}
 
-const App: React.FC = () => {
-  const { collapsed, onChange, setCollapsed } = useDashboard();
+const SiderView: React.FC<SiderView> = ({ collapsed }) => {
   return (
-    <div>
-      <Layout>
-        <SiderView collapsed={collapsed} />
-        <Layout className="site-layout">
-          <HeaderView collapsed={collapsed} setCollapsed={setCollapsed} onChange={onChange} />
-          <Content
-            className="custom-scroll"
-          >
-            <Greet name={'Sandesh'} greetings={'Morning'} />
-            <CardContainer dataList={dataList} />
-            <BarDiagram />
-          </Content>
-        </Layout>
-      </Layout>
-    </div >
+    <Sider trigger={null} collapsible collapsed={collapsed} width={300}>
+      <div className="logo" >
+        <div className="main-logo">
+          <p>H</p>
+        </div>
+        <p className='text-20-semi'>Main</p>
+      </div>
+      <Menu
+        mode="vertical"
+        defaultSelectedKeys={['1']}
+        items={dataList?.item}
+      />
+    </Sider>
   );
 };
 
-export default App;
+export default SiderView;

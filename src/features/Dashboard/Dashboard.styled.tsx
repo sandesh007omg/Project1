@@ -213,6 +213,9 @@ margin-bottom:7.8rem;
         background:unset !important;
         color:var(--primary-default) !important;
       }
+      .anticon{
+        display:inline-block;
+      }
     }
   }
 .ant-layout-sider-collapsed{
@@ -255,5 +258,9 @@ margin-bottom:7.8rem;
     left: -3.2rem;
     width:99% !important;
 }
+  }
+  .recharts-cartesian-axis-tick-value{
+    color:#6A717D;
+    font-size:10px;
   }
 `;
