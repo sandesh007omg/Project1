@@ -11,6 +11,7 @@ import {
   DownOutlined
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
+import { Link } from 'react-router-dom';
 
 export const items: MenuProps['items'] = [
   {
@@ -62,9 +63,10 @@ function getItem(
   } as MenuItem;
 }
 export const item: MenuItem[] = [
-  getItem('Option 1', '1', <PieChartOutlined />),
-  getItem('Option 2', '2', <DesktopOutlined />),
-  getItem('Option 3', '3', <ContainerOutlined />),
+  getItem(<Link to="/dashboard">Dashboard</Link>, '1', <PieChartOutlined />),
+
+  getItem(<Link to="/not-found">Tele</Link>, '2', <DesktopOutlined />),
+  getItem(<Link to="/not-found">Customer</Link>, '3', <ContainerOutlined />),
 
   getItem('Navigation One', 'sub1', <MailOutlined />, [
     getItem('Option 5', '5'),
@@ -78,5 +80,4 @@ export const item: MenuItem[] = [
     getItem('Option 10', '10'),
   ]),
 ];
-
-export const cardList = [{ title: 'Total Booking', value: 998, iconName: 'plus', color: '#9747FF' }, { title: 'Total Booking', value: 998, iconName: 'times', color: '#FF5722' }, { title: 'Total Booking', value: 998, iconName: 'trash', color: '#009688' }, { title: 'Total Booking', value: 998, iconName: 'search', color: '#FF3AD4' }]
+export const cardListed = [{ title: 'Total Booking', value: 998, iconName: "/images/icons/newImages/card1.svg", color: '#9747FF' }, { title: 'Available Rooms', value: 998, iconName: "/images/icons/newImages/card2.svg", color: '#FF5722' }, { title: 'Enquiry', value: 998, iconName: "/images/icons/newImages/card3.svg", color: '#009688' }, { title: 'Collections', value: 998, iconName: "/images/icons/newImages/card4.svg", color: '#FF3AD4' }]

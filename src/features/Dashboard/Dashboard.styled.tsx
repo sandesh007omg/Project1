@@ -18,8 +18,12 @@ export const DashboardStyled = styled.div`
     display: flex;
     justify-content: center;
     width:100%;
-    padding:1.2rem 0;
+    padding-top:1.2rem;
     text-align:center;
+    img{
+      height: 6rem;
+    width: 6rem;
+    }
     p{
     font-size:5rem;
     color:red !important;
@@ -37,6 +41,16 @@ export const DashboardStyled = styled.div`
     font-size:2.4rem;
     .ant-menu-title-content{
       margin-inline-start:1.6rem;
+      a{
+        font-family:inherit;
+      }
+    }
+  }
+  .logo .text-20-semi,
+  .ant-menu-title-content{
+    font-family:var( --nav-font-family) !important;
+    a{
+      font-family:inherit;
     }
   }
   .ant-menu-submenu,
@@ -46,6 +60,7 @@ export const DashboardStyled = styled.div`
       &>div{
         display:flex;
         padding:0;
+        align-items:center;
       }
     }
   }
@@ -55,11 +70,11 @@ export const DashboardStyled = styled.div`
     justify-content: space-between;
     height:unset;
     line-height:unset;
-    padding:1.9rem 4.2rem;
+    padding: 1.9rem 4.2rem 1.9rem 1.2rem;
     align-items:center;
     .trigger svg{
-      height:2.8rem;
-      width:2.8rem;
+      height: 4rem;
+    width: 4.8rem;
       color:#FFFFFF;
     }
     .align-left{
@@ -116,14 +131,14 @@ export const DashboardStyled = styled.div`
       width: 36.4rem;
     height: 4.8rem;
     border-radius: 5rem;
-    font-size: 1.8rem;
-    padding: 1.2re;
+    font-size: 2.4rem;
+    padding: 1.2rem;
     border:0;
     .ant-input-prefix{
       margin-left: .6rem;
     }
     input{
-      font-size:1.8rem;
+      font-size:2.4rem;
     }
     .icon{
       width: 2.4rem;
@@ -206,6 +221,18 @@ margin-bottom:7.8rem;
     li{
       color:var( --font-secondary-l1);
       font-size:2rem !important;
+      align-items: center;
+    display: flex;
+    height:unset !important;
+    line-height:unset !important;
+    &>.anticon{
+      line-height:unset !important;
+    }
+    &.ant-menu-submenu>div span,
+    &.ant-menu-submenu>div{
+      height:unset !important;
+      line-height:unset !important;
+    }
       &:hover,
       &.ant-menu-submenu-active:hover>div,
       &.ant-menu-submenu-selected>div,
@@ -215,6 +242,12 @@ margin-bottom:7.8rem;
       }
       .anticon{
         display:inline-block;
+        font-size: 2rem;
+        svg{
+          height: 2.4rem;
+    width: 2.4rem;
+}
+        }
       }
     }
   }

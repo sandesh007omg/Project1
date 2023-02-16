@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/Project1/",
+  base: "/dashboard",
   plugins: [react()],
   build: { chunkSizeWarningLimit: 1600, },
 });

@@ -1,4 +1,5 @@
 import Bar from './Bar';
+import Bar2 from './Bar2'
 
 interface BarDiagram {
   title?: string;
@@ -14,7 +15,7 @@ const BarDiagram: React.FC<BarDiagram> = ({ title }) => {
         </div>
         <div className="bar bar-two">
           <h3 className='text-24-normal'>Visitors</h3>
-          <Bar />
+          <Bar2 />
         </div>
 
       </div>

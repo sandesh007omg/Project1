@@ -1,26 +1,13 @@
 import React, { useState } from 'react';
 import {
-  AppstoreOutlined,
-  ContainerOutlined,
-  DesktopOutlined,
-  MailOutlined,
   MenuFoldOutlined,
   MenuUnfoldOutlined,
-  PieChartOutlined,
-  UserOutlined,
 } from '@ant-design/icons';
-import { DownOutlined } from '@ant-design/icons';
-import type { MenuProps } from 'antd';
-import { Dropdown, Space } from 'antd';
-
+import { Dropdown, Space, Layout } from 'antd';
 import Icon from '../../Components/Icon'
 import * as dataList from './config'
-import { Input, Card, Progress, Layout, Menu, theme } from 'antd';
-import useDashboard from './Controller/useDashboard.controller';
-import Greet from './Components/Greetings';
-import CardContainer from './Components/Card';
-import BarDiagram from './Components/BarDiagrams';
-
+import { Input, theme } from 'antd';
+import { useSelector } from 'react-redux';
 
 const { Header, Sider, Content } = Layout;
 
@@ -32,6 +19,7 @@ interface HeaderView {
 }
 
 const HeaderView: React.FC<HeaderView> = ({ collapsed, setCollapsed, onChange }) => {
+  const title = useSelector((state: any) => state?.dashboard?.title);
   return (
     <Header>
       <div className="align-left">
@@ -39,23 +27,22 @@ const HeaderView: React.FC<HeaderView> = ({ collapsed, setCollapsed, onChange })
           className: 'trigger',
           onClick: () => setCollapsed(!collapsed),
         })}
-        <Input placeholder="default size" prefix={<Icon iconName="search" />} onChange={onChange} className={'w-96 input-search'} />
+        <Input placeholder="default size" prefix={<img src="/images/icons/newImages/search.svg" alt="back" />} onChange={onChange} className={'w-96 input-search'} />
       </div>
       <div className="align-right">
         <article className="notification">
           <div className="bell">
             <span className="count">1</span>
-            {/* <Icon iconName="icon1" /> */}
-            {/* <img src="/public/images/icons/newImages/card1.svg" alt="" /> */}
+            <img src="/images/icons/newImages/bell.svg" alt="back" />
           </div>
           <div className="message">
             <span className="count">1</span>
-            <Icon iconName="message" />
+            <img src="/images/icons/newImages/notify.svg" alt="back" />
           </div>
         </article>
         <Dropdown menu={{ items: dataList?.items }}>
           <a onClick={(e) => e.preventDefault()}>
-            {/* <img src='/public/images/icons/ss.png' alt="AAA" /> */}
+            <img src="/images/icons/newImages/pro.jpg" alt="back" />
             <Space className='text-20-bold'>
               Admin
               <Icon iconName="caret-bottom" />
